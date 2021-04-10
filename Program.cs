@@ -70,7 +70,7 @@ namespace RumorSpreadSimulation
                 switch (DisplayMainMenu())
                 {
                     case 1: //Display Prompt
-                        //DisplayPrompt();
+                        DisplayPrompt();
                         break;
                     case 2: //Run Simulation for 100 Attendees
                         SimulateAverageRumorSpread(10, 40, 100);
@@ -81,10 +81,10 @@ namespace RumorSpreadSimulation
                     case 4: //Run Simulation for 10000 Attendees
                         SimulateAverageRumorSpread(10, 40, 10000);
                         break;
-                    case 5: //Run Simulation for Averages of  N = {100, 1,000, 10,000} Attendees
+                    case 6: //Run Simulation for Averages of  N = {100, 1,000, 10,000} Attendees
                         //SimulateMultipleAverageRumorSpread(1, 100);
                         break;
-                    case 6: //Exit Simulation
+                    case 5: //Exit Simulation
                         exit_program = true;
                         break;
                     default:
@@ -108,8 +108,8 @@ namespace RumorSpreadSimulation
             Console.WriteLine("\t2.] Run Simulation for 100 Attendees");
             Console.WriteLine("\t3.] Run Simulation for 1000 Attendees");
             Console.WriteLine("\t4.] Run Simulation for 10000 Attendees");
-            Console.WriteLine("\t5.] Run Simulation for Averages of  N = {100, 1,000, 10,000} Attendees");
-            Console.WriteLine("\t6.] Exit Simulation");
+            //Console.WriteLine("\t5.] Run Simulation for Averages of  N = {100, 1,000, 10,000} Attendees");
+            Console.WriteLine("\t5.] Exit Simulation");
 
             Console.Write("\nInput: ");
             string Input = Console.ReadLine();
@@ -124,6 +124,25 @@ namespace RumorSpreadSimulation
                 selection_code = -1;
             }
             return selection_code;
+        }
+
+        public static void DisplayPrompt()
+        {
+            Console.WriteLine("\n\nN students are at a party (N is an even integer 2 ≤ N ≤ 10,000)." +
+                              "\nAt some point, all students pair off at random and talk for exactly one minute." +
+                              "\nAt the end of the minute, all students again pair off with another person at random." +
+                              "\nOne student wants to start a rumor.He spreads the rumor to his conversation partner at noon." +
+                              "\nEvery person who has knowledge of the rumor obeys these rules:" +
+                              "\n\t1.The likelihood of spreading a rumor to another person is 0.5" +
+                              "\n\t2.After a person has heard the rumor 2 times, he/she will assume everyone has heard the rumor and will no longer try to spread it further.\n" );
+            Console.WriteLine("\n\nAssumptions Made for this Implementation:" +
+                              "\n\t1.] All party sizes will consist of equal number of attendees (i.e. no groups of 3 or individuals left out)." +
+                              "\n\t2.] When 2 people converse only one person can tell the rumor." +
+                              "\n\t3.] When 2 people converse only one person can hear the rumor." +
+                              "\n\t4.] When the simulation starts the initial person spreading the rumor is counted as having heard the rumor." +
+                              "\n\t5.] The person hearing the rumor must hear it it from 2 unique people before he/she stops spreading the rumor.");
+            PressEnterToReturn("Please press ENTER to return to the main menu...");
+
         }
 
         public static void PressEnterToReturn(string DisplayText)
