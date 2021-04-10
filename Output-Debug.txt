@@ -1,0 +1,8 @@
+﻿'RumorSpreadSimulation.exe' (CoreCLR: DefaultDomain): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Private.CoreLib.dll'. 
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Users\Michael\Source\Repos\RumorSpreadSimulation\bin\Debug\netcoreapp3.1\RumorSpreadSimulation.dll'. Symbols loaded.
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Runtime.dll'. 
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Console.dll'. 
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Threading.dll'. 
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Runtime.Extensions.dll'. 
+'RumorSpreadSimulation.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.13\System.Text.Encoding.Extensions.dll'. 
+The program '[17368] RumorSpreadSimulation.exe' has exited with code 0 (0x0).
